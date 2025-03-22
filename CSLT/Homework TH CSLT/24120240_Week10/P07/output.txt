@@ -1,0 +1,2 @@
+Even linked list: 20 40 0 
+Odd linked list: 10 30 50 0 

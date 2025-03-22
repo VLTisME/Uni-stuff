@@ -1,0 +1,1 @@
+Linked list A has node 3 joined with node 11 in linked list B

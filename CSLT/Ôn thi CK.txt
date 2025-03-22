@@ -1,0 +1,461 @@
+// #include <bits/stdc++.h>
+
+// using namespace std;
+
+// int GedOfArray(int *arr, int n){
+//     int res = *arr;
+//     for (int i = 1; i < n; ++i){
+//         int x = res;
+//         int y = *(arr + i);
+//         if (x < y) swap(x, y);
+//         int k = x / y;
+//         int m = x - k * y;
+//         while (m){
+//             x = y;
+//             y = m;
+//             k = x / y;
+//             m = x - k * y;
+//         }
+//         res = y;
+//     }
+//     return res;
+// }
+
+// bool checkIncreasing(int *arr, int n){
+//     int* fr = new int[n];
+//     int* en = new int[n];
+//     *fr = 1;
+//     for (int i = 1; i < n; ++i){
+//         if (*(arr + i) <= *(arr + i - 1)) *(fr + i) = 0;
+//         else *(fr + i) = *(fr + i - 1);
+//     }
+//     *(en + n - 1) = 1;
+//     for (int i = n - 2; i >= 0; --i){
+//         if (*(arr + i) >= *(arr + i + 1)) *(en + i) = 0;
+//         else *(en + i) = *(en + i + 1);
+//     }
+//     if (*en == 1 || *(fr + n - 1) == 1) return 1;
+//     if ((*(en + 1) == 1 && *arr >= *(arr + 1)) || (*(fr + n - 2) == 1 && *(arr + n - 1) <= *(arr + n - 2))) return 1;
+//     for (int i = 1; i < n - 1; ++i){
+//         if (*(arr + i) <= *(arr + i - 1) || *(arr + i) >= *(arr + i + 1)){
+//             if (*(fr + i - 1) && *(en + i + 1)) return 1;
+//         }
+//     }
+//     return 0;
+// }
+
+// signed main(){
+//     ios::sync_with_stdio(0);
+//     cin.tie(0);
+//     int n;
+//     cin >> n;
+//     int* a = new int[n];
+//     for (int i = 0; i < n; ++i) cin >> *(a + i);
+//     cout << GedOfArray(a, n) << " and " << checkIncreasing(a, n);
+// }
+
+
+
+
+
+/// Bai 3
+
+
+// #include <bits/stdc++.h>
+
+// using namespace std;
+
+// bool isP(int x){
+//     if (x <= 1) return 0;
+//     for (int i = 2; i * i <= x; ++i){
+//         if (x % i == 0) return 0;
+//     }
+//     return 1;
+// }
+
+// void findColumnPrime(int **Arr, int n, int m){
+//     for (int j = 0; j < m; ++j){
+//         bool ok = 1;
+//         for (int i = 0; i < n; ++i){
+//             if (!isP(*(*(Arr + i) + j))) ok = 0;
+//         }
+//         if (ok) cout << j << " ";
+//     }
+//     cout << "\n";
+// }
+
+// int findMaxSumSubMatrix(int **Arr, int n, int m){
+//     int** p = new int*[n];
+//     for (int i = 0; i < n; ++i){
+//         p[i] = new int[m];
+//     }
+//     p[0][0] = Arr[0][0];
+//     for (int i = 1; i < n; ++i){
+//         p[i][0] = p[i - 1][0] + Arr[i][0];
+//     }
+//     for (int j = 1; j < m; ++j){
+//         p[0][j] = p[0][j - 1] + Arr[0][j];
+//     }
+//     for (int i = 1; i < n; ++i){
+//         for (int j = 1; j < m; ++j){
+//             p[i][j] = p[i - 1][j] + p[i][j - 1] - p[i - 1][j - 1] + Arr[i][j];
+//         }
+//     }
+//     // sweep line
+//     int res = -1e9;
+//     for (int col1 = -1; col1 < m - 1; ++col1){
+//         for (int col2 = m - 1; col2 > col1; --col2){
+//             int mx = 0, w;
+//             for (int row = 0; row < n; ++row){
+//                 if (col1 == -1) w = 0;
+//                 else w = p[row][col1];
+//                 res = max(res, p[row][col2] - w + mx);
+//                 mx = max(mx, w - p[row][col2]);
+//             }
+//         }
+//     }
+//     return res;
+// }
+
+// signed main(){
+//     ios::sync_with_stdio(0);
+//     cin.tie(0);
+    
+//     int n, m;
+//     cin >> n >> m;
+//     int** a = new int*[n];
+//     for (int i = 0; i < n; ++i){
+//       *(a + i) = new int[m];
+//     }
+//     for (int i = 0; i < n; ++i){
+//         for (int j = 0; j < m; ++j){
+//             cin >> *(*(a + i) + j);
+//         }
+//     }
+//     findColumnPrime(a, n, m);
+//     cout << findMaxSumSubMatrix(a, n, m);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// Bai 4 
+
+// head is a pointer
+// head = new Node is true because new Node creates a pointer of type Node
+// exactly what head needs
+
+// #include <bits/stdc++.h>
+
+//  using namespace std;
+ 
+//  struct Node{
+//      int value;
+//      Node* next;
+//  };
+ 
+//  bool isP(int x){
+//      if (x <= 1) return 0;
+//      for (int i = 2; i * i <= x; ++i){
+//          if (x % i == 0) return 0;
+//      }
+//      return 1;
+//  }
+
+// void addFirst(Node*& head, Node*& tail, int val) {
+// 	Node* tmp = new Node;
+// 	tmp->value = val;
+// 	tmp->next = head;
+// 	head = tmp;
+// 	if (tail == nullptr)
+// 		tail = head;
+// }
+ 
+//  void addLast(Node* &head, Node* &tail, int val){
+//      if (!head){
+//          head = new Node;
+//          head->value = val;
+//          head->next = nullptr;
+//          tail = head;
+//          return;
+//      }
+//      tail->next = new Node;
+//      tail = tail->next;
+//      tail->value = val;
+//      tail->next = nullptr;
+//  }
+ 
+//  void pa(Node* head){
+//      Node* head2 = nullptr;
+//      Node* tail2 = nullptr;
+//      for (Node* tmp = head; tmp != nullptr; tmp = tmp->next)
+//          if (isP(tmp->value))
+//              addLast(head2, tail2, tmp->value);
+//      for (Node* tmp = head2; tmp != nullptr; tmp = tmp->next){
+//          cout << tmp->value << " ";
+//      }
+//      cout << "\n";
+//  }
+ 
+//  void pb(Node* head){
+//      Node* head2 = nullptr;
+//      Node* tail2 = nullptr;
+//      int sum = 0;
+//      for (Node* tmp = head; tmp != nullptr; tmp = tmp->next){
+//          if (!isP(tmp->value)){
+//              addLast(head2, tail2, sum);
+//              addLast(head2, tail2, tmp->value);
+//              sum = 0;
+//          }
+//          else{
+//              sum += tmp->value;
+//              if (tmp->next == nullptr)
+//                  addLast(head2, tail2, sum);
+//          }
+//      }
+//      for (Node* tmp = head2; tmp != nullptr; tmp = tmp->next){
+//          cout << tmp->value << " ";
+//      }
+//  }
+
+//  signed main(){
+//      ios::sync_with_stdio(0);
+//      cin.tie(0);
+     
+//      Node* head = nullptr;
+//      Node* tail = nullptr;
+//      int n;
+//      cin >> n;
+//      for (int i = 1, x; i <= n; ++i){
+//          cin >> x;
+//          addLast(head, tail, x);
+//      }
+     
+//      pa(head);
+//      pb(head);
+//  }
+
+
+
+
+
+// Bai 5
+
+// #include <bits/stdc++.h>
+
+//  using namespace std;
+ 
+//  const int N = 1000;
+ 
+//  struct item{
+//       int it_code;
+//       string it_name;
+//       int quan, uprice, tprice;
+//  } it[N + 5];
+ 
+//  int cv(string x){
+//      int num = 0;
+//      for (int i = 0; i < (int)x.size(); ++i){
+//           num = num * 10 + x[i] - '0';
+//      }
+//      return num;
+//  }
+ 
+//  signed main(){
+//         ifstream inFile("INPUT.TXT");
+//         if (!inFile){
+//             cout << "Bruh lmao\n";
+//             return;
+//         }
+//         string s;
+//         int n = 0;
+//         while (getline(inFile, s)){
+//             string tmp = "";
+//             int cnt = 0;
+//             for (auto c: s){
+//                 if (c == '-') break;
+//                 tmp += c;
+//             }
+//             ++n;
+//             if (!cnt){
+//                 it[n].it_code = cv(tmp);
+//             }
+//             else if (cnt == 1){
+//                 it[n].it_name = tmp;
+//             }
+//             else if (cnt == 2){
+//                 it[n].quan = cv(tmp);
+//             }
+//             else if (cnt == 3){
+//                 it[n].uprice = cv(tmp);
+//             }
+//             else{
+//                 it[n].tprice = cv(tmp);
+//                 cnt = 0;
+//             }
+//             ++cnt;
+//             tmp.clear();
+//         }
+//         inFile.close();
+        
+//         pair <int, int> mx = {0, 0};
+//         for (int i = 1; i <= n; ++i){
+//             if (it[i].tprice == mx.second && it[i].it_code > mx.first){
+//                 mx.first = it[i].it_code;
+//             }
+//             if (it[i].tprice > mx.second){
+//                 mx.second = it[i].tprice;
+//                 mx.first = it[i].it_code;
+//             }
+//         }
+        
+//         ofstream outFile("OUTPUT.TXT");
+//         bool e = 0;
+//         for (int i = 1; i <= n; ++i){
+//              if (it[i].tprice == mx.second && it[i].it_code == mx.first){
+//                  string tmp = to_string(it[i].it_code) + "-" + it[i].it_name + "-" + to_string(it[i].quan) + "-" + to_string(it[i].uprice) + "-" + to_string(it[i].tprice);
+//                  outFile << tmp;
+//                  e = 1;
+//              }
+//         }
+//         if (!e) outFile << -1;
+//         outFile.close();
+//  }
+
+
+// check cycle trong linked list:
+// bool isCycle(Node* head) {
+// 	// rua va tho
+// 	if (!head || !head->child) return false;
+
+// 	Node* slow = head;
+// 	Node* fast = head;
+
+// 	while (fast && fast->child){
+// 		slow = slow->child;
+// 		fast = fast->child->child;
+// 		if (slow == fast) return true;
+// 	}
+// 	return false;
+// }
+
+
+
+// #include <bits/stdc++.h>
+
+//  using namespace std;
+ 
+//  int** fib(int n){
+//      int** a = new int*[n];
+//      for (int i = 0; i < n; ++i){
+//          *(a + i) = new int[i + 1];
+//      }
+//      int cnt = 1;
+//      for (int i = 0; i < n; ++i){
+//          for (int j = 0; j < cnt; ++j){
+//              if (j == 0) *(*(a + i)) = 1;
+//              else if (j == 1) *(*(a + i) + 1) = 1;
+//              else a[i][j] = a[i][j - 1] + a[i][j - 2];
+//          }
+//          ++cnt;
+//      }
+//      return a;
+//  }
+ 
+//  signed main(){
+//      ios::sync_with_stdio(0);
+//      cin.tie(0);
+//      int n;
+//      cin >> n;
+//      int **a = fib(n);
+//      int cnt = 1;
+//      for (int i = 0; i < n; ++i){
+//          for (int j = 0; j < cnt; ++j){
+//              cout << a[i][j] << " ";
+//          }
+//          cout << "\n";
+//          ++cnt;
+//      }
+//  }
+
+
+
+
+// chép lại mấy cái binary file hay .csv file nữa???
+// #include <iostream>  
+// #include <fstream>  
+// #include <sstream> // Để tách các giá trị trong một dòng  
+// #include <vector>  
+// using namespace std;  
+
+// struct Item {  
+//     int item_code;  
+//     string item_name;  
+//     int quantity;  
+//     int unit_price;  
+//     int total_price;  
+// };  
+
+// int main() {  
+//     ifstream inFile("file.csv"); // Mở file CSV  
+//     if (!inFile) { // Kiểm tra nếu file không tồn tại  
+//         cout << "File not found!" << endl;  
+//         return 1;  
+//     }  
+
+//     string line;  
+//     vector<Item> items; // Lưu danh sách các Item  
+//     getline(inFile, line); // Đọc dòng đầu tiên (header) và bỏ qua  
+
+//     // Đọc từng dòng dữ liệu  
+//     while (getline(inFile, line)) {  
+//         stringstream ss(line); // Chuyển đổi dòng thành stream để xử lý  
+//         string item_code, item_name, quantity, unit_price, total_price;  
+
+//         // Tách từng giá trị dựa trên dấu phẩy  
+//         getline(ss, item_code, ',');  
+//         getline(ss, item_name, ',');  
+//         getline(ss, quantity, ',');  
+//         getline(ss, unit_price, ',');  
+//         getline(ss, total_price, ',');  
+
+//         // Chuyển đổi các giá trị string sang int (nếu cần)  
+//         Item item;  
+//         item.item_code = stoi(item_code); // stoi: string to int  
+//         item.item_name = item_name;  
+//         item.quantity = stoi(quantity);  
+//         item.unit_price = stoi(unit_price);  
+//         item.total_price = stoi(total_price);  
+
+//         items.push_back(item); // Thêm vào danh sách Item  
+//     }  
+
+//     inFile.close(); // Đóng file sau khi đọc xong  
+
+//     // Xuất danh sách các Item đã đọc từ file  
+//     for (const auto &item : items) {  
+//         cout << "Item Code: " << item.item_code << ", "  
+//              << "Name: " << item.item_name << ", "  
+//              << "Quantity: " << item.quantity << ", "  
+//              << "Unit Price: " << item.unit_price << ", "  
+//              << "Total Price: " << item.total_price << endl;  
+//     }  
+
+//     return 0;  
+// }  
+
+// reverse link list thi co the nghi toi phuong phap addFirst
+
+

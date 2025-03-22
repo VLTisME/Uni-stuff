@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C368B88-A19A-4A0B-A24C-01A701B6B201}|P10\\P10.vcxproj|D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P10\\P10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6C368B88-A19A-4A0B-A24C-01A701B6B201}|P10\\P10.vcxproj|solutionrelative:P10\\P10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{575D6762-D655-452B-BBCA-9EB6AFD16E60}|P09\\P09.vcxproj|D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P09\\P09.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{575D6762-D655-452B-BBCA-9EB6AFD16E60}|P09\\P09.vcxproj|solutionrelative:P09\\P09.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BAA74E1-1A39-400F-9F58-8785DF0D1BB4}|P08\\P08.vcxproj|D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P08\\P08.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3BAA74E1-1A39-400F-9F58-8785DF0D1BB4}|P08\\P08.vcxproj|solutionrelative:P08\\P08.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42E85745-7B0C-4582-833B-A64F7487AD78}|P07\\P07.vcxproj|D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P07\\P07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42E85745-7B0C-4582-833B-A64F7487AD78}|P07\\P07.vcxproj|solutionrelative:P07\\P07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5058A9BD-F889-4E90-BBBC-40770AD663CD}|P06\\P06.vcxproj|D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P06\\P06.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5058A9BD-F889-4E90-BBBC-40770AD663CD}|P06\\P06.vcxproj|solutionrelative:P06\\P06.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5EE27BA-2C55-4F0F-AE7D-545B7F70E076}|P05\\P05.vcxproj|D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P05\\P05.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D5EE27BA-2C55-4F0F-AE7D-545B7F70E076}|P05\\P05.vcxproj|solutionrelative:P05\\P05.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438F8FD3-ADDB-4B1C-A72E-234B653F8864}|P03\\P03.vcxproj|D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P03\\P03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{438F8FD3-ADDB-4B1C-A72E-234B653F8864}|P03\\P03.vcxproj|solutionrelative:P03\\P03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832D153E-269A-4264-A0B2-48FB04A51AA9}|P02\\P02.vcxproj|D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P02\\P02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{832D153E-269A-4264-A0B2-48FB04A51AA9}|P02\\P02.vcxproj|solutionrelative:P02\\P02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1AB96F-379B-44F6-92D3-598C55954416}|P01\\P01.vcxproj|D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P01\\P01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A1AB96F-379B-44F6-92D3-598C55954416}|P01\\P01.vcxproj|solutionrelative:P01\\P01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "P10.cpp",
+              "DocumentMoniker": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P10\\P10.cpp",
+              "RelativeDocumentMoniker": "P10\\P10.cpp",
+              "ToolTip": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P10\\P10.cpp",
+              "RelativeToolTip": "P10\\P10.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-09T09:12:49.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "P09.cpp",
+              "DocumentMoniker": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P09\\P09.cpp",
+              "RelativeDocumentMoniker": "P09\\P09.cpp",
+              "ToolTip": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P09\\P09.cpp",
+              "RelativeToolTip": "P09\\P09.cpp",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowGYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-09T08:54:27.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "P08.cpp",
+              "DocumentMoniker": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P08\\P08.cpp",
+              "RelativeDocumentMoniker": "P08\\P08.cpp",
+              "ToolTip": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P08\\P08.cpp",
+              "RelativeToolTip": "P08\\P08.cpp",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-09T08:48:25.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "P07.cpp",
+              "DocumentMoniker": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P07\\P07.cpp",
+              "RelativeDocumentMoniker": "P07\\P07.cpp",
+              "ToolTip": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P07\\P07.cpp",
+              "RelativeToolTip": "P07\\P07.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-08T13:46:12.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "P06.cpp",
+              "DocumentMoniker": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P06\\P06.cpp",
+              "RelativeDocumentMoniker": "P06\\P06.cpp",
+              "ToolTip": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P06\\P06.cpp",
+              "RelativeToolTip": "P06\\P06.cpp",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAEAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-08T13:38:31.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "P05.cpp",
+              "DocumentMoniker": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P05\\P05.cpp",
+              "RelativeDocumentMoniker": "P05\\P05.cpp",
+              "ToolTip": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P05\\P05.cpp",
+              "RelativeToolTip": "P05\\P05.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-08T13:24:41.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "P03.cpp",
+              "DocumentMoniker": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P03\\P03.cpp",
+              "RelativeDocumentMoniker": "P03\\P03.cpp",
+              "ToolTip": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P03\\P03.cpp",
+              "RelativeToolTip": "P03\\P03.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-08T13:17:35.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "P02.cpp",
+              "DocumentMoniker": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P02\\P02.cpp",
+              "RelativeDocumentMoniker": "P02\\P02.cpp",
+              "ToolTip": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P02\\P02.cpp",
+              "RelativeToolTip": "P02\\P02.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-08T13:17:28.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "P01.cpp",
+              "DocumentMoniker": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P01\\P01.cpp",
+              "RelativeDocumentMoniker": "P01\\P01.cpp",
+              "ToolTip": "D:\\University stuff\\CSLT\\Homework TH CSLT\\24120240_Week09\\P01\\P01.cpp",
+              "RelativeToolTip": "P01\\P01.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-08T13:16:55.153Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
